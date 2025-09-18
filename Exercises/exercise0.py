@@ -9,16 +9,12 @@ print(math.sqrt(b))
 
 
 
-
-
 # övning 0.2
 
 c = 300
 t = 365
 a = c / t
 print(f"Accuracy: {a:.2f}")
-
-
 
 
 
@@ -34,15 +30,11 @@ print(a)
 
 
 
-
-
 # övning 0.4
  
 m = 1
 k = (1 - 4) / (0 - 4)
 print(f"{k}x + {m}")
-
-
 
 
 
@@ -55,8 +47,6 @@ print(distans)
 
 
 
-
-
 # övning 0.6
 
 import math
@@ -66,3 +56,4 @@ p2 = (3, 1, 0)
 
 distans = math.sqrt((p1[0] - p2[0]) **2 + (p1[1] - p2[1]) **2 + (p1[2] - p2[2]) **2)
 print(f"{distans} l.u.")
+
