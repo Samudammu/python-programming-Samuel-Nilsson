@@ -9,12 +9,12 @@ data = pd.read_csv(
     names=["x", "y"])
 
 # Ger k negativ lutning
-# Väljer m så att linjen går genom mitten av punkterna och klassificerar dem
+# Väljer m = y-kx så att linjen går genom mitten av punkterna
 k = -0.5
 m = data['y'].mean() - k * data['x'].mean()
 data['label'] = np.where(data['y'] > k * data['x'] + m, 1, 0)
 
-# Rita med färg efter klass
+# Visualisering med färg efter klass
 plt.scatter(data[data['label']==0]['x'], data[data['label']==0]['y'], color='blue', label='Klass 0')
 plt.scatter(data[data['label']==1]['x'], data[data['label']==1]['y'], color='green', label='Klass 1')
 plt.plot(data['x'], k * data['x'] + m, color='red', label=f"y = {k:.2f}x + {m:.2f}")
