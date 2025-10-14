@@ -22,8 +22,8 @@ print("Antal små bokstäver: ", lower)
 
 # övning 5.2
 
-mening = "A picture says more than a thousand words, a matematical formula says more than a thousand pictures."
-print(f"{mening} består av {len(mening.split())} ord")
+mening1 = "A picture says more than a thousand words, a matematical formula says more than a thousand pictures."
+print(f"{mening1} består av {len(mening1.split())} ord")
 
 
 
@@ -37,3 +37,17 @@ if cleanText == cleanText[::-1]:
     print(text, "är ett palindrom")
 else:
     print(text, "är inte ett palindrom")
+
+
+
+# övning 5.4
+
+sentence = "Pure mathematics is, in its way, the poetry of logical ideas"
+vowels = "aeiouy"
+result = []
+
+for letter in sentence:
+    if letter in vowels:
+        result.append(letter)
+# Kan också använda list comprehension [letter for letter in sentence if letter in vowels]
+print(f"There are {len(result)} vowels")
